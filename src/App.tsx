@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={MainPage} />
+      <Route exact path="/home" component={MainPage} />
     </BrowserRouter>
   );
 }
