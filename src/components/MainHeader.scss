@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "NanumBarunGothic-regular";
+    font-weight: bold;
+    src: url("../asset/fonts/NanumBarunGothic.ttf") format("truetype");
+}
+
+.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+.menu {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 1px 0;
+}
+
+.inner{
+    max-width: 1300px;
+    min-width: 1300px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 24px 0 24px;
+}
+
+.logoBtn {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+    height: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.logoImg {
+    width: 40px;
+    height: 40px;
+}
+
+.logoText {
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.gnbList {
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    ul {
+        font-family: "NanumBarunGothic-regular";
+        float: left;
+        font-size: 20px;
+        height: 100%;
+        padding: 30px 60px 30px 0;
+        line-height: 1;
+    }
+}
+
+
+.hotSale {
+    font-size: 30px !important;
+    padding: 25px 60px 25px 0 !important; 
+    color: crimson;
+}
+
+.inner01 {
+    width: 200px;
+}
+
+.inner02 {
+    width: 200px;
+}
+
+.menuList {
+    .spotInner {
+        position: absolute;
+        top: 80px;
+        padding: 0px 0px 0px 20px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+        text-align: left;
+        display: none;
+        z-index: 2;
+        background-color: #ffffff;
+        li {
+            padding: 25px 0 25px 0px;
+            font-size: 15px;
+            height: 0px;
+            color: gray;
+            cursor: pointer;
+            &:hover {
+                color: #c79a73;
+            }
+        }
+    }
+    &:hover {
+        color: #c79a73;
+        .spotInner {
+            display: block;
+        }
+    }
+}
